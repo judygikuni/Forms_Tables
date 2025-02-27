@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>sign_up</title>
+     
+    <style>
+
+        body{
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        form{
+            background-color: white;
+        }
+        #heading{
+            text-align: left;
+        }
+
+
+        .signup_form {
+            width: 30%;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .signup_form input{
+            padding: 15px 17px;
+            width: 93%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px 0;
+        }
+
+        #privacy{
+            width: auto;
+            height: 0.4cm;
+        }
+
+        #button2{
+            padding: 17px 17px;
+            margin: 5px 0;
+            width: 100%;
+            background: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        h3{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        h3:before,
+        h3:after
+        {
+
+            content:"";
+            flex: 1 1;
+            border-bottom: 1px solid black;
+            margin: auto;
+        }
+
+        a{
+            
+           text-decoration: none;
+           color: black;
+           font-weight:bolder
+
+        }
+
+        #icon {
+      font-size: 35px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      gap: 40px;
+    }
+        
+    </style>
+</head>
+<body>
+    <form class="signup_form" action="login.html">
+        <p id="paragraph">Already have an account? <a href="http://127.0.0.1:5501/login.html">Sign in</a></p>
+        <h1 id="heading">Sign Up</h1>
+
+        <label for="name">Name:</label>
+        <br>
+        <input id="name" placeholder="Name" type="text" />
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" placeholder="Email" type="email" />
+        <br>
+
+        <label for="password">Password</label>
+        <br>
+        <input id="password" placeholder="password" type="password" />
+        <br>
+
+        <input type="checkbox" id="privacy" name="privacy"/>     
+        <label>I've Read And Agree With <strong>The Terms Of Service</strong> And Our <strong>Privacy Policy</strong><label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="checkbox" id="button2">Sign Up</button>
+        <br>
+        <br>
+        <h3>Or Sign Up With</h3>
+        <br>
+        
+
+        <div id="icon">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </div>
+    </form>
+    
+</body>
+</html>
